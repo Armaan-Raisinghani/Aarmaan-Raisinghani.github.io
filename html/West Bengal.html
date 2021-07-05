@@ -18,9 +18,8 @@
                 x.innerHTML = "Geolocation is not supported by this browser.";
             }
         }
-
         function showPosition(position) {
-            const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=cbb82274b717172f81f9cd714dd51027`
+            const url = `https://api.openweathermap.org/data/2.5/air_pollution?lat=22.978624&lon=87.747803&appid=cbb82274b717172f81f9cd714dd51027`
 
             fetch(url)
                 .then(res => res.json())
@@ -46,5 +45,6 @@
                 })
         }
     </script>
+
 </body>
 </html>
