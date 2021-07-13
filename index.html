@@ -24,6 +24,7 @@
 
             fetch(url)
                 .then(res => res.json())
+            console.log(json)
                 .then(json => json.list)
                 .then(list => list[0].components)
                 .then(components => {
